@@ -1,17 +1,26 @@
+/* hela sidan */
 body {
+  /* tar bort kant */
   margin: 0;
+  /* typsnitt */
   font-family: sans-serif;
 }
 
-/* The Pixi canvas sits behind the text */
+/* pixi canvas */
 canvas {
+  /* står still */
   position: fixed;
+  /* uppe till vänster */
   top: 0;
   left: 0;
+  /* bakom texten */
   z-index: -1;
 }
 
+/* innehållet */
 main {
+  /* max bredd */
   max-width: 40rem;
+  /* luft runt */
   padding: 2rem;
 }
