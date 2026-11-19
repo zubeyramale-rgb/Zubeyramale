@@ -1,58 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- teckenkodning -->
   <meta charset="UTF-8">
-  <!-- funkar på mobil -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- namn i fliken -->
-  <title>Zubeyr Amale</title>
-  <!-- typsnitt från google -->
-  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-  <!-- kopplar css -->
-  <link rel="stylesheet" href="style.css?v=3">
+  <title>Guess the Gesture</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- huvudinnehåll -->
   <main>
-    <!-- stor rubrik -->
+    <!-- Mitt namn och kort om mig -->
     <h1>Zubeyr Amale</h1>
-    <!-- kort om mig -->
-    <p class="intro">IT, media & design student in Stockholm, working with graphic design, programming and UX design.</p>
+    <p class="names">IT, media & design student in Stockholm, working with graphic design, programming and UX design.</p>
 
-    <!-- rubrik -->
+    <!-- Mina projekt -->
     <h2>Work</h2>
-    <!-- lista -->
     <ul>
-      <!-- listpunkt -->
-      <li>Gesture Rave, interactive hand gesture visuals for Algorave (2026)</li>
-      <li>Spelsamling, PHP/MySQL web application (2026)</li>
+      <li>Guess the Gesture, interactive hand gesture game with Alex Haseb (2026)</li>
+      <li>Different rave posters and interactive games</li>
       <li>Youth card game about engaging in society, design thinking project (2026)</li>
       <li>Fanta, advertisement film (2026)</li>
       <li>Figma design system, UI components and layout (2026)</li>
     </ul>
 
-    <!-- rubrik -->
+    <!-- Om projektet och oss som kreatörer -->
+    <h2>About the Project</h2>
+    <p>Guess the Gesture is an interactive game created by Alex Haseb and Zubeyr Amale. Using a webcam, the game tracks your hands and challenges you to discover seven hidden gestures. Each gesture unlocks a new symbol, and some trigger colorful visual effects. You can use hints if you get stuck and restart whenever you want to try again.</p>
+
+    <p>As creators, we enjoy experimenting with technology, design and playful ideas. We wanted to make something simple, fun and easy for anyone to try. The dark design, bright colors and moving dots reflect the interactive and creative feeling of our project.</p>
+
+    <!-- Bilder från projektet -->
     <h2>Gallery</h2>
-    <!-- bildrutnät -->
     <div class="gallery">
-      <img src="bild_1.jpeg" alt="Bild 1">
-      <img src="bild_2.jpeg" alt="Bild 2">
-      <img src="bild_3.jpeg" alt="Bild 3">
-      <img src="bild_4.jpeg" alt="Bild 4">
-      <img src="bild_5.jpeg" alt="Bild 5">
+      <img src="1.jpeg" alt="Bild 1">
+      <img src="2.jpeg" alt="Bild 2">
+      <img src="3.jpeg" alt="Bild 3">
+      <img src="4.jpeg" alt="Bild 4">
+      <img src="5.jpeg" alt="Bild 5">
     </div>
 
-    <!-- stor bild när man klickar -->
-    <div class="popup">
-      <img src="" alt="Stor bild">
-    </div>
-  <!-- slut på main -->
+    <!-- Video från projektet -->
+    <h2>Project Video</h2>
+    <video controls>
+      <source src="video.mp4" type="video/mp4">
+    </video>
   </main>
 
-  <!-- laddar pixi -->
   <script src="https://cdn.jsdelivr.net/npm/pixi.js@8.6.6/dist/pixi.min.js"></script>
-  <!-- kopplar js -->
-  <script type="module" src="main.js?v=3"></script>
+  <script type="module" src="main.js"></script>
 </body>
 </html>
