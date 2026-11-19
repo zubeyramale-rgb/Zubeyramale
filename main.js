@@ -40,3 +40,20 @@ app.ticker.add((ticker) => {
     }
   }
 });
+
+// hämtar popup
+const popup = document.querySelector(".popup");
+const popupImg = document.querySelector(".popup img");
+
+// klick på bild öppnar
+document.querySelectorAll(".gallery img").forEach((img) => {
+  img.addEventListener("click", () => {
+    popupImg.src = img.src;
+    popup.classList.add("open");
+  });
+});
+
+// klick stänger
+popup.addEventListener("click", () => {
+  popup.classList.remove("open");
+});

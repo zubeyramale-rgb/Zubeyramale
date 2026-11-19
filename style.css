@@ -37,7 +37,7 @@ h1 {
   color: #ff2bd6;
   /* glow */
   text-shadow: 0 0 10px #ff2bd6, 0 0 30px #ff2bd6;
-  /* ingen kant under */
+  /* luft under */
   margin-bottom: 0.5rem;
 }
 
@@ -49,7 +49,7 @@ h1 {
   line-height: 1.6;
 }
 
-/* work rubrik */
+/* rubriker */
 h2 {
   /* turkos neon */
   color: #00f0ff;
@@ -93,4 +93,72 @@ li:hover {
   box-shadow: 0 0 15px rgba(0, 240, 255, 0.4);
   /* flyttar lite */
   transform: translateX(5px);
+}
+
+/* bildrutnät */
+.gallery {
+  /* rutnät */
+  display: grid;
+  /* två eller fler per rad */
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  /* luft mellan */
+  gap: 1rem;
+}
+
+/* bilderna */
+.gallery img {
+  /* fyller rutan */
+  width: 100%;
+  /* fyrkantiga */
+  aspect-ratio: 1;
+  /* beskär snyggt */
+  object-fit: cover;
+  /* rosa kant */
+  border: 2px solid #ff2bd6;
+  /* hand-muspekare */
+  cursor: pointer;
+  /* mjuk övergång */
+  transition: 0.3s;
+}
+
+/* när musen är på */
+.gallery img:hover {
+  /* turkos kant */
+  border-color: #00f0ff;
+  /* glow */
+  box-shadow: 0 0 20px #00f0ff;
+  /* lite större och snett */
+  transform: scale(1.05) rotate(-2deg);
+  /* färgskift */
+  filter: hue-rotate(60deg) saturate(1.5);
+}
+
+/* stor bild bakgrund */
+.popup {
+  /* dold från start */
+  display: none;
+  /* täcker hela skärmen */
+  position: fixed;
+  inset: 0;
+  /* mörk */
+  background: rgba(10, 10, 18, 0.9);
+  /* centrerar bilden */
+  justify-content: center;
+  align-items: center;
+  /* över allt */
+  z-index: 10;
+}
+
+/* visas när öppen */
+.popup.open {
+  display: flex;
+}
+
+/* stora bilden */
+.popup img {
+  /* max storlek */
+  max-width: 90%;
+  max-height: 90%;
+  /* rosa glow */
+  box-shadow: 0 0 40px #ff2bd6;
 }
