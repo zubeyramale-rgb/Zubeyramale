@@ -2,8 +2,12 @@
 body {
   /* tar bort kant */
   margin: 0;
+  /* mörk bakgrund */
+  background: #0a0a12;
+  /* ljus text */
+  color: #e6e6f0;
   /* typsnitt */
-  font-family: sans-serif;
+  font-family: "Space Mono", monospace;
 }
 
 /* pixi canvas */
@@ -22,5 +26,71 @@ main {
   /* max bredd */
   max-width: 40rem;
   /* luft runt */
-  padding: 2rem;
+  padding: 3rem 2rem;
+}
+
+/* stor rubrik */
+h1 {
+  /* storlek */
+  font-size: 3rem;
+  /* rosa neon */
+  color: #ff2bd6;
+  /* glow */
+  text-shadow: 0 0 10px #ff2bd6, 0 0 30px #ff2bd6;
+  /* ingen kant under */
+  margin-bottom: 0.5rem;
+}
+
+/* text om mig */
+.intro {
+  /* lite gråare */
+  color: #b8b8d0;
+  /* radavstånd */
+  line-height: 1.6;
+}
+
+/* work rubrik */
+h2 {
+  /* turkos neon */
+  color: #00f0ff;
+  /* glow */
+  text-shadow: 0 0 8px #00f0ff;
+  /* stora bokstäver */
+  text-transform: uppercase;
+  /* luft mellan bokstäver */
+  letter-spacing: 0.2em;
+  /* luft ovanför */
+  margin-top: 3rem;
+}
+
+/* lista */
+ul {
+  /* tar bort prickar */
+  list-style: none;
+  /* tar bort indrag */
+  padding: 0;
+}
+
+/* listpunkt */
+li {
+  /* luft inuti */
+  padding: 0.8rem 1rem;
+  /* luft mellan */
+  margin-bottom: 0.6rem;
+  /* mörk ruta */
+  background: rgba(20, 20, 35, 0.8);
+  /* neon kant vänster */
+  border-left: 3px solid #ff2bd6;
+  /* mjuk övergång */
+  transition: 0.2s;
+}
+
+/* när musen är på */
+li:hover {
+  /* byter färg på kant */
+  border-left-color: #00f0ff;
+  /* glow */
+  box-shadow: 0 0 15px rgba(0, 240, 255, 0.4);
+  /* flyttar lite */
+  transform: translateX(5px);
 }
